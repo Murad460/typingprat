@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "997671033299",
+    "firebase_url": "https://hazim-clinic-default-rtdb.firebaseio.com",
+    "project_id": "hazim-clinic",
+    "storage_bucket": "hazim-clinic.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997671033299:android:37eff877f31661d067f726",
+        "android_client_info": {
+          "package_name": "com.example.hazim_clinic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg4z13_cEKA0EbR307mD1O7CoFa_PaxSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

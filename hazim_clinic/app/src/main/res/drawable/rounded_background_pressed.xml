@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Use a different color for the pressed state -->
+    <solid android:color="@color/primary_variant" /> <!-- Example: a gray color -->
+    <corners android:radius="11dp" />
+</shape>
+    

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hazim_clinic">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".note.LoginActivity"/>
+
+        <activity android:name=".note.DoctorViewActivity"/>
+        <activity android:name=".note.ParentViewActivity"/>
+        <activity android:name=".note.ProfileActivity"/>
+        <activity android:name=".note.SettingActivity"/>
+        <activity android:name=".note.StaffActivity"/>
+        <activity android:name=".note.TreatmentActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".note.DoctorDetailActivity"/>
+        <activity android:name=".note.OurServicesActivity"/>
+        <activity android:name=".note.ActivityDoctorsDetails"/>
+        <activity android:name=".note.ChildRegActivity"/>
+        <activity android:name=".note.AddDoctorActivity"/>
+        <activity android:name=".note.DeleteDoctorActivity"/>
+        <activity android:name=".note.DeleteChildActivity"/>
+        <activity android:name=".note.AdminActivity"/>
+        <activity android:name=".note.SignInActivity"/>
+        <activity android:name=".note.DoctorAdminSignUpActivity"/>
+
+        <activity android:name=".note.ParentSignUpActivity"/>
+
+
+
+
+
+
+
+
+
+<!--        <activity-->
+<!--            android:name="com.firebase.ui.auth.ui.AuthMethodPickerActivity"-->
+<!--            android:label="@string/app_name"-->
+<!--            tools:replace="android:label" />-->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7F2F1"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    scroll view starts here-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<!--            account code starts here-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/back_img"
+                    android:clipToOutline="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:shapeAppearanceOverlay="@style/Circular"
+                    android:src="@drawable/back_icon2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#000000"
+                    android:id="@+id/profile_name"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/back_img"
+                    app:layout_constraintEnd_toStartOf="@id/end_img"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+
+                    android:text="Profile"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/end_img"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:shapeAppearanceOverlay="@style/Circular"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:src="@drawable/bell_icon"
+                        />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+<!--            account code ends here-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7F2F1"
+        android:layout_gravity="center"
+        android:padding="2dp"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+
+            app:shapeAppearanceOverlay="@style/Circular"
+            android:src="@drawable/avater"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/nav_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr.Murad"
+                android:textAlignment="textStart"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/nav_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="murad@doctor.gmail.com"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            >
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+<!--            list of itmes code-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/black_rounded_box"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/white_rounded_box"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/wallet_img"
+                        android:clipToOutline="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:shapeAppearanceOverlay="@style/Circular"
+                        android:src="@drawable/wallet_icon"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/wallet"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/wallet_img"
+                        app:layout_constraintEnd_toStartOf="@id/forw_img"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+
+                        android:text="Wallet"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/forw_img"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:shapeAppearanceOverlay="@style/Circular"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:src="@drawable/forward_icon"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/white_rounded_box"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/editprofile_img"
+                        android:clipToOutline="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:shapeAppearanceOverlay="@style/Circular"
+                        android:src="@drawable/edit_profile"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/edit_profile"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        app:layout_constraintStart_toEndOf="@id/editprofile_img"
+                        app:layout_constraintEnd_toStartOf="@id/forw_img2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+
+                        android:text="Edit Profile"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/forw_img2"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:shapeAppearanceOverlay="@style/Circular"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:src="@drawable/forward_icon"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_width="match_parent"
+                    android:background="@drawable/white_rounded_box"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+
+                    android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:gravity="center"
+                            android:id="@+id/activities"
+                            android:textColor="#000000"
+                            android:layout_height="wrap_content"
+
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+
+                            android:text="Activities"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+<!--    scroll view ends here-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Hazim_clinic" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/primary</item>
+        <!-- Change this to your desired color. You can reference your layout's color -->
+        <item name="android:statusBarColor">#E7F2F1</item>
+
+        <!-- Optional: Make status bar icons (like time and battery) dark -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.Hazim_clinic" parent="Base.Theme.Hazim_clinic" />
+    <style name="Circular" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">#000000</item>
+        <item name="android:textColorHint">#000000</item> <!-- Optional: A nice grey for the hint -->
+    </style>
+
+</resources>

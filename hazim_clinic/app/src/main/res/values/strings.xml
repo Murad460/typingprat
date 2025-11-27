@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">WecareCDC</string>
+
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+
+    <string-array name="session_types_options">
+        <item>Speech Therapy</item>
+        <item>Occupational Therapy</item>
+        <item>Physical Therapy</item>
+        <item>Behavioral Therapy</item>
+        <item>Developmental Therapy</item>
+        <item>Sensory Therapy</item>
+        <item>Play Therapy</item>
+        <item>Assessment Session</item>
+        <item>Review Session</item>
+    </string-array>
+
+</resources>
